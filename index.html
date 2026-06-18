@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Honolulu Roofing Pro | Roof Repair &amp; Replacement in Honolulu, Hawaii</title>
+<meta name="description" content="Honolulu Roofing Pro - Honolulu, Hawaii's 4.9-star roof repair &amp; replacement contractor. Roof repair, roof replacement, storm &amp; hail damage and free roof inspections. Licensed &amp; insured. Serving Honolulu, Kapolei, Kaneohe, Aiea &amp; Ewa Beach. Call (808) 555-0147." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --slate-900:#0f172a;--slate-800:#1e293b;--slate-700:#334155;--slate-600:#475569;--slate-500:#64748b;--slate-400:#94a3b8;--slate-300:#cbd5e1;--slate-200:#e2e8f0;--slate-100:#f1f5f9;--slate-50:#f8fafc;
+    --amber:#f59e0b;--amber-dark:#d97706;--amber-light:#fbbf24;--white:#ffffff;
+    --radius:16px;--radius-lg:24px;
+    --shadow-sm:0 1px 3px rgba(15,23,42,.08),0 1px 2px rgba(15,23,42,.06);
+    --shadow-md:0 10px 25px -5px rgba(15,23,42,.10),0 8px 10px -6px rgba(15,23,42,.06);
+    --shadow-lg:0 25px 50px -12px rgba(15,23,42,.25);
+    --shadow-amber:0 10px 24px -6px rgba(245,158,11,.45);
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--slate-700);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;color:var(--slate-900);line-height:1.12;letter-spacing:-0.02em;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;border:none;cursor:pointer;border-radius:999px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;white-space:nowrap;font-size:1rem;}
+  .btn-amber{background:linear-gradient(135deg,var(--amber-light),var(--amber-dark));color:#1a1303;padding:16px 28px;box-shadow:var(--shadow-amber);}
+  .btn-amber:hover{transform:translateY(-2px);box-shadow:0 16px 32px -6px rgba(245,158,11,.55);}
+  .btn-outline{background:rgba(255,255,255,.08);color:#fff;padding:16px 28px;border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(6px);}
+  .btn-outline:hover{background:rgba(255,255,255,.16);transform:translateY(-2px);}
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--slate-200);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .logo{display:flex;align-items:center;gap:11px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.22rem;color:var(--slate-900);letter-spacing:-0.02em;}
+  .logo-mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--slate-800),var(--slate-900));display:grid;place-items:center;box-shadow:var(--shadow-sm);flex-shrink:0;}
+  .logo-mark svg{width:23px;height:23px;}
+  .logo small{display:block;font-family:'Inter';font-weight:500;font-size:.68rem;color:var(--slate-500);letter-spacing:.04em;text-transform:uppercase;margin-top:-2px;}
+  .nav-links{display:flex;align-items:center;gap:30px;}
+  .nav-links a.link{font-weight:500;font-size:.95rem;color:var(--slate-600);transition:color .15s;}
+  .nav-links a.link:hover{color:var(--slate-900);}
+  .call-btn{display:inline-flex;align-items:center;gap:8px;background:var(--slate-900);color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;font-family:'Plus Jakarta Sans';font-size:.95rem;transition:transform .18s,box-shadow .18s;}
+  .call-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);}
+  .call-btn svg{width:17px;height:17px;}
+  .nav-call-text{display:inline;}
+  .hero{position:relative;color:#fff;padding:92px 0 104px;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;z-index:0;}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(15,23,42,.94) 0%,rgba(15,23,42,.82) 45%,rgba(30,41,59,.62) 100%);z-index:1;}
+  .hero .container{position:relative;z-index:2;}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.16);border:1px solid rgba(245,158,11,.35);color:var(--amber-light);padding:7px 15px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.03em;margin-bottom:22px;}
+  .hero-eyebrow svg{width:14px;height:14px;}
+  .hero h1{font-size:clamp(2.3rem,6vw,4rem);color:#fff;max-width:16ch;margin-bottom:20px;font-weight:800;}
+  .hero h1 .hl{color:var(--amber-light);}
+  .hero p.sub{font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--slate-200);max-width:50ch;margin-bottom:34px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-mini{display:flex;align-items:center;gap:22px;margin-top:34px;flex-wrap:wrap;}
+  .hero-mini-item{display:flex;align-items:center;gap:9px;font-size:.92rem;color:var(--slate-200);font-weight:500;}
+  .hero-mini-item svg{width:19px;height:19px;color:var(--amber-light);flex-shrink:0;}
+  .trust{background:var(--slate-900);border-top:1px solid rgba(255,255,255,.06);}
+  .trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:26px 0;}
+  .trust-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;color:#fff;}
+  .trust-item .big{font-family:'Plus Jakarta Sans';font-weight:800;font-size:1.5rem;color:#fff;letter-spacing:-0.02em;}
+  .trust-item .lbl{font-size:.82rem;color:var(--slate-400);font-weight:500;}
+  .stars{color:var(--amber);letter-spacing:2px;}
+  section.pad{padding:88px 0;}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 54px;}
+  .sec-tag{display:inline-block;color:var(--amber-dark);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;}
+  .sec-head h2{font-size:clamp(1.9rem,4.2vw,2.7rem);margin-bottom:16px;}
+  .sec-head p{font-size:1.08rem;color:var(--slate-600);}
+  .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .svc-card{background:var(--white);border:1px solid var(--slate-200);border-radius:var(--radius-lg);padding:32px 30px;transition:transform .22s ease,box-shadow .22s ease,border-color .22s;position:relative;overflow:hidden;}
+  .svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:transparent;}
+  .svc-icon{width:58px;height:58px;border-radius:15px;background:linear-gradient(135deg,var(--slate-100),var(--slate-200));display:grid;place-items:center;margin-bottom:20px;transition:background .22s;}
+  .svc-card:hover .svc-icon{background:linear-gradient(135deg,var(--amber-light),var(--amber-dark));}
+  .svc-icon svg{width:28px;height:28px;color:var(--slate-700);transition:color .22s;}
+  .svc-card:hover .svc-icon svg{color:#fff;}
+  .svc-card h3{font-size:1.28rem;margin-bottom:9px;}
+  .svc-card p{color:var(--slate-600);font-size:.97rem;}
+  .svc-card .more{display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--amber-dark);font-weight:700;font-size:.9rem;font-family:'Plus Jakarta Sans';}
+  .why{background:var(--slate-50);}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .why-list{display:flex;flex-direction:column;gap:26px;}
+  .why-item{display:flex;gap:18px;}
+  .why-item .check{flex-shrink:0;width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--slate-800),var(--slate-900));display:grid;place-items:center;box-shadow:var(--shadow-sm);}
+  .why-item .check svg{width:23px;height:23px;color:var(--amber-light);}
+  .why-item h4{font-size:1.15rem;margin-bottom:5px;}
+  .why-item p{color:var(--slate-600);font-size:.96rem;}
+  .why-visual{position:relative;}
+  .why-img{border-radius:var(--radius-lg);width:100%;height:100%;min-height:420px;object-fit:cover;box-shadow:var(--shadow-lg);}
+  .why-badge{position:absolute;bottom:-22px;left:-22px;background:#fff;border-radius:var(--radius);padding:20px 24px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:15px;}
+  .why-badge .num{font-family:'Plus Jakarta Sans';font-weight:800;font-size:2.3rem;color:var(--slate-900);line-height:1;}
+  .why-badge .txt{font-size:.85rem;color:var(--slate-600);font-weight:500;line-height:1.3;}
+  .quote{background:linear-gradient(135deg,var(--slate-900),var(--slate-800));color:#fff;position:relative;overflow:hidden;}
+  .quote::before{content:'';position:absolute;top:-120px;right:-120px;width:380px;height:380px;background:radial-gradient(circle,rgba(245,158,11,.18),transparent 70%);}
+  .quote-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center;position:relative;z-index:1;}
+  .quote-left h2{color:#fff;font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:18px;}
+  .quote-left p{color:var(--slate-300);font-size:1.06rem;margin-bottom:28px;}
+  .quote-perks{display:flex;flex-direction:column;gap:14px;}
+  .quote-perk{display:flex;align-items:center;gap:12px;font-weight:500;color:var(--slate-200);}
+  .quote-perk svg{width:22px;height:22px;color:var(--amber-light);flex-shrink:0;}
+  .quote-phone{margin-top:32px;display:inline-flex;align-items:center;gap:14px;}
+  .quote-phone .ico{width:52px;height:52px;border-radius:14px;background:rgba(245,158,11,.16);border:1px solid rgba(245,158,11,.3);display:grid;place-items:center;flex-shrink:0;}
+  .quote-phone .ico svg{width:24px;height:24px;color:var(--amber-light);}
+  .quote-phone .lbl{font-size:.82rem;color:var(--slate-400);display:block;}
+  .quote-phone .num{font-family:'Plus Jakarta Sans';font-weight:800;font-size:1.5rem;color:#fff;display:block;}
+  .form-card{background:#fff;border-radius:var(--radius-lg);padding:36px 34px;box-shadow:var(--shadow-lg);}
+  .form-card h3{font-size:1.4rem;margin-bottom:6px;}
+  .form-card .fc-sub{color:var(--slate-500);font-size:.94rem;margin-bottom:24px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:.85rem;font-weight:600;color:var(--slate-700);margin-bottom:7px;font-family:'Plus Jakarta Sans';}
+  .field input,.field select,.field textarea{width:100%;padding:13px 15px;border:1.5px solid var(--slate-200);border-radius:11px;font-family:'Inter';font-size:.98rem;color:var(--slate-900);background:var(--slate-50);transition:border-color .15s,box-shadow .15s,background .15s;}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber);background:#fff;box-shadow:0 0 0 4px rgba(245,158,11,.13);}
+  .field textarea{resize:vertical;min-height:92px;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .form-card .btn-amber{width:100%;margin-top:8px;padding:16px;font-size:1.05rem;}
+  .form-fine{text-align:center;font-size:.8rem;color:var(--slate-400);margin-top:14px;}
+  .form-success{display:none;text-align:center;padding:36px 20px;}
+  .form-success.show{display:block;animation:pop .4s ease;}
+  @keyframes pop{from{opacity:0;transform:scale(.94);}to{opacity:1;transform:scale(1);}}
+  .form-success .sc-ico{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#34d399,#059669);display:grid;place-items:center;margin:0 auto 20px;box-shadow:0 12px 28px -6px rgba(5,150,105,.5);}
+  .form-success .sc-ico svg{width:38px;height:38px;color:#fff;}
+  .form-success h3{font-size:1.5rem;margin-bottom:10px;}
+  .form-success p{color:var(--slate-600);}
+  .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .rev-card{background:#fff;border:1px solid var(--slate-200);border-radius:var(--radius-lg);padding:30px 28px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;}
+  .rev-stars{color:var(--amber);font-size:1.05rem;letter-spacing:2px;margin-bottom:14px;}
+  .rev-card p.quote-text{color:var(--slate-700);font-size:1rem;flex-grow:1;margin-bottom:22px;}
+  .rev-author{display:flex;align-items:center;gap:13px;}
+  .rev-avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;font-size:1.05rem;flex-shrink:0;}
+  .rev-author .name{font-weight:700;color:var(--slate-900);font-size:.96rem;font-family:'Plus Jakarta Sans';}
+  .rev-author .loc{font-size:.84rem;color:var(--slate-500);}
+  .rev-google{display:inline-flex;align-items:center;gap:7px;margin:40px auto 0;justify-content:center;color:var(--slate-500);font-size:.9rem;font-weight:500;width:100%;}
+  .rev-google b{color:var(--slate-900);}
+  .area{background:var(--slate-50);}
+  .area-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;}
+  .area-left h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:16px;}
+  .area-left p{color:var(--slate-600);font-size:1.06rem;margin-bottom:26px;}
+  .area-chips{display:flex;flex-wrap:wrap;gap:11px;}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--slate-200);padding:11px 18px;border-radius:999px;font-weight:600;font-size:.95rem;color:var(--slate-800);box-shadow:var(--shadow-sm);}
+  .chip svg{width:16px;height:16px;color:var(--amber-dark);}
+  .area-map{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--slate-200);background:#fff;}
+  .area-map-head{padding:20px 24px;border-bottom:1px solid var(--slate-200);display:flex;align-items:center;gap:12px;}
+  .area-map-head .pin{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--amber-light),var(--amber-dark));display:grid;place-items:center;flex-shrink:0;}
+  .area-map-head .pin svg{width:22px;height:22px;color:#fff;}
+  .area-map-head .t{font-family:'Plus Jakarta Sans';font-weight:700;color:var(--slate-900);}
+  .area-map-head .s{font-size:.85rem;color:var(--slate-500);}
+  .area-map-body{height:220px;background:linear-gradient(135deg,#1e293b,#0f172a);position:relative;display:grid;place-items:center;}
+  .area-map-body::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px;}
+  .map-center{position:relative;text-align:center;color:#fff;}
+  .map-pulse{width:18px;height:18px;border-radius:50%;background:var(--amber);margin:0 auto 12px;box-shadow:0 0 0 0 rgba(245,158,11,.6);animation:pulse 2s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(245,158,11,.55);}70%{box-shadow:0 0 0 26px rgba(245,158,11,0);}100%{box-shadow:0 0 0 0 rgba(245,158,11,0);}}
+  .map-center .mc-t{font-family:'Plus Jakarta Sans';font-weight:700;font-size:1.1rem;}
+  .map-center .mc-s{font-size:.85rem;color:var(--slate-400);}
+  footer{background:var(--slate-900);color:var(--slate-300);padding:64px 0 0;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;padding-bottom:50px;}
+  .foot-logo{display:flex;align-items:center;gap:11px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:1.2rem;color:#fff;margin-bottom:16px;}
+  .foot-logo .logo-mark{background:linear-gradient(135deg,var(--amber-light),var(--amber-dark));}
+  .foot-about p{font-size:.94rem;color:var(--slate-400);max-width:30ch;}
+  .foot-col h4{color:#fff;font-size:.95rem;margin-bottom:18px;font-family:'Plus Jakarta Sans';letter-spacing:.02em;}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
+  .foot-col ul li{font-size:.93rem;color:var(--slate-400);}
+  .foot-col ul li a:hover{color:var(--amber-light);}
+  .foot-contact-item{display:flex;align-items:flex-start;gap:11px;margin-bottom:14px;}
+  .foot-contact-item svg{width:18px;height:18px;color:var(--amber-light);flex-shrink:0;margin-top:3px;}
+  .foot-contact-item .v{font-size:.93rem;color:var(--slate-300);}
+  .foot-contact-item .v b{color:#fff;display:block;font-family:'Plus Jakarta Sans';font-size:1.05rem;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .foot-bottom p{font-size:.85rem;color:var(--slate-500);}
+  .foot-license{font-size:.85rem;color:var(--slate-400);}
+  .foot-license b{color:var(--slate-300);}
+  .mobile-call{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-top:1px solid var(--slate-200);box-shadow:0 -6px 24px -6px rgba(15,23,42,.15);}
+  .mobile-call a{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--amber-light),var(--amber-dark));color:#1a1303;font-weight:800;font-family:'Plus Jakarta Sans';padding:15px;border-radius:14px;font-size:1.08rem;box-shadow:var(--shadow-amber);}
+  .mobile-call a svg{width:20px;height:20px;}
+  @media (max-width:980px){
+    .why-grid,.quote-grid,.area-grid{grid-template-columns:1fr;gap:40px;}
+    .reviews-grid{grid-template-columns:1fr;}
+    .why-visual{order:-1;}
+    .why-img{min-height:300px;}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:34px;}
+  }
+  @media (max-width:760px){
+    .nav-links .link{display:none;}
+    .nav-call-text{display:none;}
+    .call-btn{padding:10px 14px;}
+    .trust-inner{grid-template-columns:1fr 1fr;gap:24px 14px;}
+    .services-grid{grid-template-columns:1fr;}
+    section.pad{padding:64px 0;}
+    .hero{padding:64px 0 80px;}
+    .hero-ctas{flex-direction:column;}
+    .hero-ctas .btn{width:100%;}
+    .field-row{grid-template-columns:1fr;}
+    .form-card{padding:28px 22px;}
+    .foot-grid{grid-template-columns:1fr;gap:30px;}
+    .mobile-call{display:block;}
+    body{padding-bottom:76px;}
+    .why-badge{left:0;bottom:-16px;}
+  }
+</style>
+<!-- SEO-AEO-GEO:START -->
+<link rel="canonical" href="https://honoluluroofingpros.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Honolulu Roofing Pros | Roof Repair & Replacement in Honolulu, Hawaii" />
+<meta property="og:description" content="Honolulu's 5-star roof repair & replacement contractor. Leak repair, full re-roofs, storm damage & free inspections. Licensed & insured. Serving Honolulu, Kapolei, Kaneohe, Aiea & Ewa Beach." />
+<meta property="og:url" content="https://honoluluroofingpros.com/" />
+<meta property="og:site_name" content="Honolulu Roofing Pros" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Honolulu Roofing Pros | Roof Repair & Replacement in Honolulu, Hawaii" />
+<meta name="twitter:description" content="Honolulu's 5-star roof repair & replacement contractor. Leak repair, full re-roofs, storm damage & free inspections. Licensed & insured. Serving Honolulu, Kapolei, Kaneohe, Aiea & Ewa Beach." />
+<meta name="geo.region" content="US-HI" />
+<meta name="geo.placename" content="Honolulu" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","@id":"https://honoluluroofingpros.com/#business","name":"Honolulu Roofing Pros","url":"https://honoluluroofingpros.com","telephone":"(808) 555-0147","description":"Honolulu's 5-star roof repair & replacement contractor. Leak repair, full re-roofs, storm damage & free inspections. Licensed & insured. Serving Honolulu, Kapolei, Kaneohe, Aiea & Ewa Beach.","areaServed":[{"@type":"City","name":"Honolulu"},{"@type":"City","name":"Kapolei"},{"@type":"City","name":"Kaneohe"},{"@type":"City","name":"Aiea"},{"@type":"City","name":"Ewa Beach"},{"@type":"City","name":"Mililani"}],"address":{"@type":"PostalAddress","addressLocality":"Honolulu","addressRegion":"HI","addressCountry":"US"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"96"},"priceRange":"$$","openingHours":"Mo-Sa 07:00-19:00","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Repair","areaServed":"Honolulu"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Roof Replacement","areaServed":"Honolulu"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Leak & Storm Damage Repair","areaServed":"Honolulu"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Free Roof Inspections","areaServed":"Honolulu"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a roof replacement cost in Honolulu?","acceptedAnswer":{"@type":"Answer","text":"Most roof replacements on Oahu range from $12,000 to $30,000 depending on size, pitch, and material (asphalt shingle, metal, or tile). Honolulu's climate and salt air affect material choice. We provide a free written estimate before any work begins."}},{"@type":"Question","name":"Do you offer free roof inspections in Honolulu?","acceptedAnswer":{"@type":"Answer","text":"Yes. Honolulu Roofing Pros provides free roof inspections across Honolulu, Kapolei, Kaneohe, Aiea, and Ewa Beach. We honestly assess whether a repair or full replacement makes sense."}},{"@type":"Question","name":"What roofing material is best for Hawaii's climate?","acceptedAnswer":{"@type":"Answer","text":"On Oahu, metal and tile roofs hold up best against salt air, UV, and heavy rain, while quality asphalt shingles remain a cost-effective option. We help you pick the right material for your home and budget."}},{"@type":"Question","name":"How fast can you respond to a roof leak?","acceptedAnswer":{"@type":"Answer","text":"We prioritize active leaks and storm damage and typically inspect within 24 hours. Call (808) 555-0147 to get on the schedule fast."}}]}</script>
+<!-- SEO-AEO-GEO:END -->
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#top" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></span>
+      <span>Honolulu Roofing Pro<small>Honolulu, HI &middot; Licensed &amp; Insured</small></span>
+    </a>
+    <nav class="nav-links">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#why">Why Us</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#areas">Service Area</a>
+      <a class="call-btn" href="tel:+18085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="nav-call-text">(808) 555-0147</span></a>
+    </nav>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <span class="hero-eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Rated 4.9 &#9733; by 112 Honolulu homeowners</span>
+    <h1>Honolulu's Roof Repair &amp; Replacement <span class="hl">Done Right</span> - The First Time.</h1>
+    <p class="sub">Storm damage, leaks, or a roof past its prime? Honolulu Roofing Pro delivers honest inspections, premium materials, and craftsmanship backed by an 18-year reputation across the Oahu.</p>
+    <div class="hero-ctas">
+      <a href="#quote" class="btn btn-amber"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Get a Free Inspection</a>
+      <a href="tel:+18085550147" class="btn btn-outline"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+    </div>
+    <div class="hero-mini">
+      <div class="hero-mini-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Same-day storm response</div>
+      <div class="hero-mini-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free, no-pressure estimates</div>
+      <div class="hero-mini-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Insurance claims handled</div>
+    </div>
+  </div>
+</section>
+<div class="trust">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="big">Licensed</span><span class="lbl">&amp; Fully Insured</span></div>
+      <div class="trust-item"><span class="big stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="lbl">4.9 &middot; 112 Google Reviews</span></div>
+      <div class="trust-item"><span class="big">18+ Years</span><span class="lbl">Serving Honolulu</span></div>
+      <div class="trust-item"><span class="big">Free</span><span class="lbl">Estimates &amp; Inspections</span></div>
+    </div>
+  </div>
+</div>
+<section class="pad" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">What We Do</span>
+      <h2>Complete Roofing Services for Oahu Homes</h2>
+      <p>From a single missing shingle to a full tear-off and replacement, our crews handle it all with the same attention to detail.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Roof Repair</h3>
+        <p>Fast, lasting fixes for leaks, missing shingles, flashing failures and ventilation issues - sealed up before the next storm rolls in.</p>
+        <span class="more">Stop the leak <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></div>
+        <h3>Roof Replacement</h3>
+        <p>Premium architectural shingles, metal and tile installed by certified crews - backed by manufacturer and workmanship warranties.</p>
+        <span class="more">See your options <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Storm Damage</h3>
+        <p>Hail, wind and heavy snow hit fast in Hawaii. We document damage, tarp emergencies same-day, and work directly with your insurance adjuster.</p>
+        <span class="more">File a claim <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Free Inspections</h3>
+        <p>A thorough 21-point roof inspection with honest photos and a clear report - no scare tactics, no obligation, ever.</p>
+        <span class="more">Book yours free <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pad why" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <span class="sec-tag">Why Honolulu Roofing Pro</span>
+        <h2 style="font-size:clamp(1.9rem,4.2vw,2.7rem);margin-bottom:28px;">Roofers Honolulu homeowners actually recommend.</h2>
+        <div class="why-list">
+          <div class="why-item"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Straight answers, fair prices</h4><p>We tell you when a repair will do - and when it won't. No upselling a $20k roof you don't need.</p></div></div>
+          <div class="why-item"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Insurance-claim experts</h4><p>18 years working with Hawaii adjusters means we know how to get storm damage approved - and done right.</p></div></div>
+          <div class="why-item"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Own crews, never subcontracted</h4><p>The team that quotes your job is the team that does it. Trained, vetted, and accountable to our name.</p></div></div>
+          <div class="why-item"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Clean job, guaranteed</h4><p>Magnetic nail sweeps, debris hauled away, and a workmanship warranty in writing on every replacement.</p></div></div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <img class="why-img" src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=900&q=80" alt="Professional roofers installing a new roof in Honolulu, Hawaii" loading="lazy" />
+        <div class="why-badge"><span class="num">4.9</span><span class="txt"><span class="stars" style="color:var(--amber)">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>112 verified reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pad quote" id="quote">
+  <div class="container">
+    <div class="quote-grid">
+      <div class="quote-left">
+        <span class="sec-tag" style="color:var(--amber-light)">Free Inspection</span>
+        <h2>Get your free roof inspection &amp; quote.</h2>
+        <p>Tell us what's going on and we'll call you back within the hour during business hours - no pushy sales, just a real plan and a fair number.</p>
+        <div class="quote-perks">
+          <div class="quote-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>100% free, no-obligation inspection</div>
+          <div class="quote-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Photo report &amp; honest assessment</div>
+          <div class="quote-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>We handle the insurance paperwork</div>
+        </div>
+        <a href="tel:+18085550147" class="quote-phone"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span><span class="lbl">Prefer to talk now?</span><span class="num">(808) 555-0147</span></span></a>
+      </div>
+      <div class="form-card">
+        <form id="quoteForm" novalidate>
+          <h3>Request your free inspection</h3>
+          <p class="fc-sub">Fill this out and we'll be in touch within 1 hour.</p>
+          <div class="field-row">
+            <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Jane Doe" required /></div>
+            <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(808) 555-0147" required /></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required /></div>
+          <div class="field"><label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Roof Repair</option>
+              <option>Roof Replacement</option>
+              <option>Storm / Hail Damage</option>
+              <option>Free Roof Inspection</option>
+              <option>Not sure - need advice</option>
+            </select>
+          </div>
+          <div class="field"><label for="message">Tell us about your roof</label><textarea id="message" name="message" placeholder="e.g. I noticed a leak in the upstairs ceiling after the last hailstorm..."></textarea></div>
+          <button type="submit" class="btn btn-amber">Get My Free Inspection</button>
+          <p class="form-fine">&#128274; We respect your privacy. No spam, ever.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="sc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Thanks! We'll call you within 1 hour.</h3>
+          <p>Your request is in. A Honolulu Roofing Pro specialist will reach out shortly to schedule your free inspection. Need us sooner? Call <b>(808) 555-0147</b>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pad" id="reviews">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">Real Reviews</span>
+      <h2>Honolulu homeowners trust Honolulu Roofing Pro</h2>
+      <p>4.9 stars across 112 verified Google reviews - here's what your neighbors are saying.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="quote-text">"A hailstorm wrecked our roof in June and Honolulu Roofing Pro had a tarp up the same afternoon. They walked the whole insurance claim with us and the new roof looks incredible. Couldn't recommend them more."</p><div class="rev-author"><div class="rev-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">MR</div><div><div class="name">Marcus Dalton</div><div class="loc">Kapolei, ID</div></div></div></div>
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="quote-text">"What sold me was the honesty. Two other companies tried to sell me a full replacement - Honolulu Roofing Pro found the actual leak, fixed it for a fraction, and didn't oversell. Rare these days."</p><div class="rev-author"><div class="rev-avatar" style="background:linear-gradient(135deg,#475569,#0f172a)">JT</div><div><div class="name">Jennifer Boyle</div><div class="loc">Aiea, ID</div></div></div></div>
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="quote-text">"Professional from quote to cleanup. The crew was on time every day, the site was spotless, and they did a magnet sweep for nails so my kids could play in the yard. Top-notch work."</p><div class="rev-author"><div class="rev-avatar" style="background:linear-gradient(135deg,#10b981,#059669)">DW</div><div><div class="name">David Whitfield</div><div class="loc">Kaneohe, ID</div></div></div></div>
+    </div>
+    <div class="rev-google"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>Rated <b>&nbsp;4.9 / 5&nbsp;</b> from <b>&nbsp;112 Google reviews</b></div>
+  </div>
+</section>
+<section class="pad area" id="areas">
+  <div class="container">
+    <div class="area-grid">
+      <div class="area-left">
+        <span class="sec-tag">Where We Work</span>
+        <h2>Proudly serving the Oahu</h2>
+        <p>Locally owned and operated, we're on the road across the Oahu every day. If you're in or around Honolulu, we've got you covered.</p>
+        <div class="area-chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Honolulu</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Kapolei</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Kaneohe</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Aiea</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ewa Beach</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Kuna</span>
+        </div>
+      </div>
+      <div class="area-map">
+        <div class="area-map-head"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="t">Honolulu Roofing Pro</div><div class="s">Oahu service area</div></div></div>
+        <div class="area-map-body"><div class="map-center"><div class="map-pulse"></div><div class="mc-t">Greater Honolulu, HI</div><div class="mc-s">30-mile service radius</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1303" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></span>Honolulu Roofing Pro</div>
+        <p>Honolulu's trusted roofing contractor for repairs, replacements, and storm damage. Licensed, insured, and built on 18 years of honest work across the Oahu.</p>
+      </div>
+      <div class="foot-col"><h4>Services</h4><ul><li><a href="#services">Roof Repair</a></li><li><a href="#services">Roof Replacement</a></li><li><a href="#services">Storm &amp; Hail Damage</a></li><li><a href="#services">Free Inspections</a></li></ul></div>
+      <div class="foot-col"><h4>Service Area</h4><ul><li>Honolulu</li><li>Kapolei &amp; Kaneohe</li><li>Aiea &amp; Ewa Beach</li><li>Kuna</li></ul></div>
+      <div class="foot-col"><h4>Get In Touch</h4>
+        <a href="tel:+18085550147" class="foot-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="v">Call us today<b>(808) 555-0147</b></span></a>
+        <div class="foot-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="v">Mon-Sat: 7am-7pm<br>Sun: Emergency only</span></div>
+      </div>
+    </div>
+    <div class="foot-bottom"><p>&copy; 2026 Honolulu Roofing Pro. All rights reserved.</p><p class="foot-license">Licensed &amp; Insured &middot; <b>ID RCE Lic. #RCE-54021</b></p></div>
+  </div>
+</footer>
+<div class="mobile-call"><a href="tel:+18085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (808) 555-0147</a></div>
+<script>
+  document.getElementById('quoteForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('name'),phone=document.getElementById('phone'),email=document.getElementById('email'),service=document.getElementById('service');
+    var ok=true;
+    [name,phone,email,service].forEach(function(f){if(!f.value||!f.value.trim()){f.style.borderColor='#ef4444';ok=false;}else{f.style.borderColor='';}});
+    if(!ok)return;
+    var payload={site:'honoluluroofingpros.com',name:name.value,phone:phone.value,email:email.value,service:service.value,message:(document.getElementById('message')||{}).value||''};
+    this.style.display='none';
+    var s=document.getElementById('formSuccess');
+    s.classList.add('show');
+    s.scrollIntoView({behavior:'smooth',block:'center'});
+    try{fetch('https://lead-handler.brent-akamine.workers.dev/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});}catch(err){}
+  });
+</script>
+</body>
+</html>
